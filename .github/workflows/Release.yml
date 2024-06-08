@@ -46,8 +46,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.main }}
-          release_name: SmsForwarder ${{ github.main }}
+          tag_name: v1.0.0
+          release_name: SmsForwarder  v1.0.0
           #tag_name: ${{ github.ref }}
           #release_name: SmsForwarder ${{ github.ref }}
           draft: false

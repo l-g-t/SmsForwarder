@@ -52,7 +52,7 @@ jobs:
           #release_name: SmsForwarder ${{ github.ref }}
           draft: false
           prerelease: false
-          commitish: ${{ github\.sha }}  
+          commitish: ${{ github.sha }}  
           # 添加 commitish 参数
           
       # 上传至release的资源

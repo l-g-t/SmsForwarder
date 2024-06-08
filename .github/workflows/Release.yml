@@ -46,13 +46,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: v1.0.0
-          release_name: SmsForwarder  v1.0.0
+          tag_name: v11.0.0
+          release_name: Sms-Forwarder  v11.0.0
           #tag_name: ${{ github.ref }}
           #release_name: SmsForwarder ${{ github.ref }}
           draft: false
           prerelease: false
-          commitish: ${{ github.sha }}  
+          #commitish: ${{ github.sha }}  
           # 添加 commitish 参数
           
       # 上传至release的资源

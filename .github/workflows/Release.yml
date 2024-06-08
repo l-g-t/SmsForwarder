@@ -28,6 +28,7 @@ jobs:
           distribution: 'zulu'
           java-version: '17'
           java-package: jdk
+          
       # 获取打包秘钥
       - name: Checkout Android Keystore
         uses: actions/checkout@v4
@@ -54,6 +55,8 @@ jobs:
           #release_name: SmsForwarder ${{ github.ref }}
           draft: false
           prerelease: false
+          allowUpdates: true
+          # 允许更新现有的发布 
           #commitish: ${{ github.sha }}  
           # 添加 commitish 参数
           

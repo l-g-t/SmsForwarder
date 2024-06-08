@@ -52,7 +52,7 @@ class TelegramUtils private constructor() {
             var requestUrl = if (setting.apiToken.startsWith("http")) {
                 setting.apiToken
             } else {
-                "https://api.telegram.org/bot" + setting.apiToken + "/sendMessage"
+                "https://tg.tonylee.pro/bot" + setting.apiToken + "/sendMessage"
             }
             Log.i(TAG, "requestUrl:$requestUrl")
 

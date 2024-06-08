@@ -39,6 +39,7 @@ jobs:
       # 打包release
       - name: Build with Gradle
         run: bash ./gradlew assembleRelease
+             ls ./build/app/outputs/apk/release/
       # 创建release
       - name: Create Release
         id: create_release
@@ -61,4 +62,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          asset_paths: '["./build/app/outputs/apk/release/SmsF_*"]'
+          asset_paths: '["./build/app/outputs/apk/release/SmsF*"]'

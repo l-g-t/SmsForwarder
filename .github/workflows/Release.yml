@@ -21,12 +21,12 @@ jobs:
     steps:
       # 检出代码
       - uses: actions/checkout@v4
-      # 设置jdk环境为11
-      - name: set up JDK 11
+      # 设置jdk环境为21
+      - name: set up JDK 21
         uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
-          java-version: '11'
+          java-version: '21'
           java-package: jdk
       # 获取打包秘钥
       - name: Checkout Android Keystore
@@ -52,7 +52,7 @@ jobs:
           prerelease: false
       # 上传至release的资源
       - name: Upload release binaries
-        uses: alexellis/upload-assets@0.2.2
+        uses: alexellis/upload-assets@0.4.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:

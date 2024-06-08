@@ -52,6 +52,8 @@ jobs:
           #release_name: SmsForwarder ${{ github.ref }}
           draft: false
           prerelease: false
+          allowUpdates: true  # 允许更新现有的发布
+          
       # 上传至release的资源
       - name: Upload release binaries
         uses: alexellis/upload-assets@0.4.0

@@ -21,12 +21,12 @@ jobs:
     steps:
       # 检出代码
       - uses: actions/checkout@v4
-      # 设置jdk环境为21
-      - name: set up JDK 21
+      # 设置jdk环境为17
+      - name: set up JDK 17
         uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
-          java-version: '21'
+          java-version: '17'
           java-package: jdk
       # 获取打包秘钥
       - name: Checkout Android Keystore
